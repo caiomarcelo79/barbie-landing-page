@@ -34,12 +34,11 @@
     justify-content: space-between;
     margin: 0 auto;
     width: 1240px;
-    
     height: 100px;
   }
   .cabecalho-sub > div > a{
     font-size: 24px;
-    line-height: 27;
+    line-height: 27px;
     margin-left: 12px;
     font-weight: bold;
   }
@@ -181,6 +180,32 @@
   }
   .resenha-footer > span > strong{
     color: var(--marrom-escuro);
+  }
+
+  .rodape{
+    background-color: var(--marrom-escuro);
+  }
+  .rodape-sub{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 1240px;
+    height: 265px;
+  }
+  .rodape-sub > div{
+    display: flex;
+    flex-direction: column;
+  }
+  .rodape-sub > div > a{
+    font-size: 24px;
+    line-height: 27px;
+    margin: 15px 0px;
+  }
+  .rodape-sub > div > img{
+    position: relative;
+    bottom: 55px;
   }
 
 }
