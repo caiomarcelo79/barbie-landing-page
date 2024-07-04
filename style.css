@@ -1,7 +1,9 @@
 :root{
   --marrom-escuro: #3F2305;
   --marrom-claro: #A4907C;
+  --bege-escuro: #DFD7BF;
   --bege-claro: #F2EAD3;
+  --cinza: #333333;
 }
 
 *{
@@ -45,6 +47,7 @@
     width: 1240px;
     margin: 0 auto;
     margin-top: 100px;
+    margin-bottom: 100px;
     display: flex;
     justify-content: center;
   }
@@ -52,6 +55,11 @@
     padding-top: 14px;
     color: var(--marrom-escuro);
     margin-left: 10px;
+  }
+  .especificacoes > img{
+    width: 400px;
+    height: 600px;
+    margin-left: 0px;
   }
   .especificacoes > div > h1{
     font-size: 48px;
@@ -63,12 +71,13 @@
   .especificacoes > div > h2{
     font-size: 24px;
     line-height: 27px;
-    margin-top: 14px;
+    margin-top: 24px;
   }
   .especificacoes > div > p{
     font-size: 24px;
     line-height: 27px;
     margin-top: 6px;
+    color: var(--cinza);
   }
 
   .especificacoes-sub{
@@ -82,12 +91,56 @@
   .especificacoes-sub > div > h2{
     font-size: 24px;
     line-height: 27px;
-    margin-top: 14px;
+    margin-top: 24px;
   }
   .especificacoes-sub > div > p{
     font-size: 24px;
     line-height: 27px;
     margin-top: 6px;
+    color: var(--cinza);
+  }
+  .elenco{
+    background-color: var(--bege-escuro);
+    height: 394px;
+  }
+  .elenco-sub{
+    display: flex;
+    flex-direction: column;
+    width: 1240px;
+    margin: 0 auto;
+    padding-top: 30px;
+  }
+  .titulo{
+    display: flex;
+  }
+  .titulo > h1{
+    color: var(--marrom-escuro);
+    font-size: 36px;
+    line-height: 40px;
+  }
+  .titulo > a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 125px;
+    height: 40px;
+    background-color: var(--marrom-escuro);
+    color: var(--bege-escuro);
+    font-size: 24px;
+    line-height: 27px;
+    margin-left: 15px;
+    border-radius: 20px;
+  }
+
+  .elenco-carousel{
+    margin-top: 20px;
+  }
+  
+  .item > div{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 24px;
+    line-height: 27px;
   }
 
 
