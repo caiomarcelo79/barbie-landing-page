@@ -1,5 +1,6 @@
 :root{
   --marrom-escuro: #3F2305;
+  --marrom-claro: #A4907C;
   --bege-claro: #F2EAD3;
 }
 
@@ -10,27 +11,84 @@
 
 @font-face {
   font-family: Fonte Cabecalho;
-  src: url(fonts/league-spartan.bold.otf);
+  src: url(fonts/LeagueSpartan.ttf);
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1260px) {
   body{
     background-color: var(--bege-claro);
+    font-family: Fonte Cabecalho;
   }
   a{
     text-decoration: none;
     color: var(--bege-claro);
   }
   .cabecalho{
+    background-color: var(--marrom-escuro);
+  }
+  .cabecalho-sub{
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    background-color: var(--marrom-escuro);
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 1240px;
+    
     height: 100px;
   }
-  .cabecalho > div > a{
-    font-family: Fonte Cabecalho;
-    font-size: 18px;
+  .cabecalho-sub > div > a{
+    font-size: 24px;
+    line-height: 27;
     margin-left: 12px;
+    font-weight: bold;
   }
+  .especificacoes{
+    width: 1240px;
+    margin: 0 auto;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+  }
+  .especificacoes > div{
+    padding-top: 14px;
+    color: var(--marrom-escuro);
+    margin-left: 10px;
+  }
+  .especificacoes > div > h1{
+    font-size: 48px;
+    line-height: 55px;
+  }
+  .especificacoes > div > h1 > span{
+    color: var(--marrom-claro);
+  }
+  .especificacoes > div > h2{
+    font-size: 24px;
+    line-height: 27px;
+    margin-top: 14px;
+  }
+  .especificacoes > div > p{
+    font-size: 24px;
+    line-height: 27px;
+    margin-top: 6px;
+  }
+
+  .especificacoes-sub{
+    display: flex;
+  }
+  .especificacoes-sub > div{
+    margin-right: auto;
+    width: 50%;
+  }
+
+  .especificacoes-sub > div > h2{
+    font-size: 24px;
+    line-height: 27px;
+    margin-top: 14px;
+  }
+  .especificacoes-sub > div > p{
+    font-size: 24px;
+    line-height: 27px;
+    margin-top: 6px;
+  }
+
+
 }
