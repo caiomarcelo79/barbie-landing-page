@@ -1,0 +1,36 @@
+:root{
+  --marrom-escuro: #3F2305;
+  --bege-claro: #F2EAD3;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: Fonte Cabecalho;
+  src: url(fonts/league-spartan.bold.otf);
+}
+
+@media (min-width: 1025px) {
+  body{
+    background-color: var(--bege-claro);
+  }
+  a{
+    text-decoration: none;
+    color: var(--bege-claro);
+  }
+  .cabecalho{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--marrom-escuro);
+    height: 100px;
+  }
+  .cabecalho > div > a{
+    font-family: Fonte Cabecalho;
+    font-size: 18px;
+    margin-left: 12px;
+  }
+}
