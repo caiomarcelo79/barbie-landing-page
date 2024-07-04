@@ -143,5 +143,44 @@
     line-height: 27px;
   }
 
+  .resenhas{
+    width: 1240px;
+    margin: 0 auto;
+    margin-top: 73px;
+    margin-bottom: 70px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .resenhas-sub{
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .resenhas-sub > div{
+    width: 550px;
+    background-color: var(--bege-escuro);
+    border-radius: 10px;
+    padding: 30px;
+  }
+  .resenhas-sub > div > p{
+    font-size: 24px;
+    line-height: 27px;
+    color: var(--cinza);
+  }
+  .resenhas-sub > div > p > strong{
+    color: var(--marrom-escuro);
+  }
+  .resenha-footer{
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+    line-height: 27px;
+    color: var(--cinza);
+  }
+  .resenha-footer > span > strong{
+    color: var(--marrom-escuro);
+  }
 
 }
