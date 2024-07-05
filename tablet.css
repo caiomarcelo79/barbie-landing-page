@@ -205,7 +205,6 @@
     align-items: center;
     margin: 0 auto;
     margin-top: 50px;
-    height: 265px;
     padding-left: 15px;
   }
   .rodape-sub > div{
@@ -214,6 +213,7 @@
     width: 50%;
   }
   .rodape-sub > div > img{
+    
     width: fit-content;
   }
   .rodape-sub > div > a{

@@ -6,6 +6,9 @@ $(document).ready(()=>{
       0 : {
         items : 1
       },
+      300 : {
+        items : 2
+      },
       601 : {
         items: 4
       },
