@@ -1,13 +1,224 @@
+:root{
+  --marrom-escuro: #3F2305;
+  --marrom-claro: #A4907C;
+  --bege-escuro: #DFD7BF;
+  --bege-claro: #F2EAD3;
+  --cinza: #333333;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: Fonte Cabecalho;
+  src: url(fonts/LeagueSpartan.ttf);
+}
+
 @media (min-width: 601px) and (max-width: 1259px) {
-  body {
-      background-color: lightblue;
-      font-size: 16px;
-      margin: 15px;
+  body{
+    background-color: var(--bege-claro);
+    font-family: Fonte Cabecalho;
+  }
+  a{
+    text-decoration: none;
+    color: var(--bege-claro);
+  }
+  .cabecalho{
+    background-color: var(--marrom-escuro);
+  }
+  .cabecalho-sub{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    height: 70px;
+  }
+  .cabecalho-sub > div > a{
+    font-size: 24px;
+    line-height: 27px;
+    margin-left: 12px;
+    font-weight: bold;
+  }
+  .subMenu{
+    width: 40px;
+    height: 6px;
+    background-color: var(--bege-claro);
+    border-radius: 10px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+  .especificacoes{
+    margin-top: 50px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .especificacoes > div{
+    padding-top: 14px;
+    color: var(--marrom-escuro);
+    margin-left: 10px;
+  }
+  .especificacoes > img{
+    width: 400px;
+    height: 600px;
+    margin-left: 0px;
+  }
+  .especificacoes > div > h1{
+    font-size: 48px;
+    line-height: 55px;
+    text-align: center;
+  }
+  .especificacoes > div > h1 > span{
+    color: var(--marrom-claro);
+    font-weight: lighter;
+    
+  }
+  .especificacoes > div > div > h2{
+    font-size: 24px;
+    line-height: 27px;
+    margin-top: 24px;
+  }
+  .especificacoes > div > div > p{
+    font-size: 24px;
+    line-height: 27px;
+    margin-top: 6px;
+    color: var(--cinza);
   }
 
-  header {
-      background-color: #444;
-      padding: 8px;
-      text-align: center;
+  .especificacoes-sub{
+    display: flex;
+  }
+  .especificacoes-sub > div{
+    margin-right: auto;
+    width: 50%;
+  }
+
+  .especificacoes-sub > div > h2{
+    font-size: 24px;
+    line-height: 27px;
+    margin-top: 24px;
+  }
+  .especificacoes-sub > div > p{
+    font-size: 24px;
+    line-height: 27px;
+    margin-top: 6px;
+    color: var(--cinza);
+  }
+  .elenco{
+    background-color: var(--bege-escuro);
+    height: 394px;
+  }
+  .elenco-sub{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-top: 30px;
+  }
+  .titulo{
+    display: flex;
+  }
+  .titulo > h1{
+    color: var(--marrom-escuro);
+    font-size: 36px;
+    line-height: 40px;
+  }
+  .titulo > a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 125px;
+    height: 40px;
+    background-color: var(--marrom-escuro);
+    color: var(--bege-escuro);
+    font-size: 24px;
+    line-height: 27px;
+    margin-left: 15px;
+    border-radius: 20px;
+  }
+
+  .elenco-carousel{
+    margin-top: 20px;
+  }
+  
+  .item > div{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 24px;
+    line-height: 27px;
+  }
+
+  .resenhas{
+    margin: 0 auto;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 73px;
+    margin-bottom: 70px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .resenhas-sub{
+    margin-top: -10px;
+    display: flex;
+    flex-direction: column;
+  }
+  .resenhas-sub > div{
+    width: fit-content;
+    background-color: var(--bege-escuro);
+    border-radius: 10px;
+    padding: 30px;
+    margin-top: 25px;
+  }
+  .resenhas-sub > div > p{
+    font-size: 24px;
+    line-height: 27px;
+    color: var(--cinza);
+  }
+  .resenhas-sub > div > p > strong{
+    color: var(--marrom-escuro);
+  }
+  .resenha-footer{
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+    line-height: 27px;
+    color: var(--cinza);
+  }
+  .resenha-footer > span > strong{
+    color: var(--marrom-escuro);
+  }
+
+  .rodape{
+    background-color: var(--marrom-escuro);
+    padding-bottom: 50px;
+    padding-top: 15px;
+  }
+  .rodape-sub{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 50px;
+    height: 265px;
+    padding-left: 15px;
+  }
+  .rodape-sub > div{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+  .rodape-sub > div > img{
+    width: fit-content;
+  }
+  .rodape-sub > div > a{
+    font-size: 24px;
+    line-height: 27px;
+    margin: 15px 0px;
   }
 }

@@ -42,6 +42,14 @@
     margin-left: 12px;
     font-weight: bold;
   }
+  .subMenu{
+    width: 40px;
+    height: 6px;
+    background-color: var(--bege-claro);
+    border-radius: 10px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
   .especificacoes{
     width: 1240px;
     margin: 0 auto;
@@ -69,12 +77,12 @@
     font-weight: lighter;
     
   }
-  .especificacoes > div > h2{
+  .especificacoes > div > div > h2{
     font-size: 24px;
     line-height: 27px;
     margin-top: 24px;
   }
-  .especificacoes > div > p{
+  .especificacoes > div > div > p{
     font-size: 24px;
     line-height: 27px;
     margin-top: 6px;
@@ -85,7 +93,6 @@
     display: flex;
   }
   .especificacoes-sub > div{
-    margin-right: auto;
     width: 50%;
   }
 
@@ -186,15 +193,15 @@
 
   .rodape{
     background-color: var(--marrom-escuro);
+    padding-bottom: 30px;
+    padding-top: 15px;
   }
   .rodape-sub{
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 0 auto;
-    margin-top: 50px;
     width: 1240px;
-    height: 265px;
   }
   .rodape-sub > div{
     display: flex;
@@ -205,7 +212,7 @@
     line-height: 27px;
     margin: 15px 0px;
   }
-  .rodape-sub > div > img{
+  .rodape-sub > img{
     position: relative;
     bottom: 55px;
   }
